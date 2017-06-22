@@ -3,15 +3,22 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Archive: 2017 | Hexo</title>
+    <title>Logical Operators in JavaScript | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+        <meta name="keywords" content="Logical Operators;JavaScript" />
+    
+    <meta name="description" content="There are three logical operators in JavaScript,  &amp;amp;&amp;amp;, || and !.  DescriptionUnlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to true, t">
+<meta name="keywords" content="Logical Operators;JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Logical Operators in JavaScript">
+<meta property="og:url" content="http://yoursite.com/2017/06/22/Logical-Operators-in-JavaScript/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="There are three logical operators in JavaScript,  &amp;amp;&amp;amp;, || and !.  DescriptionUnlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to true, t">
+<meta property="og:updated_time" content="2017-06-22T07:27:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="Logical Operators in JavaScript">
+<meta name="twitter:description" content="There are three logical operators in JavaScript,  &amp;amp;&amp;amp;, || and !.  DescriptionUnlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to true, t">
     
 
     
@@ -127,171 +134,175 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>Archive: 2017
+    uncategorized
     </h1>
 </div>
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-Logical-Operators-in-JavaScript" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2017" class="archive-year"><i class="icon fa fa-calendar-o"></i>2017</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/06/22/Logical-Operators-in-JavaScript/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2017/06/22/Logical-Operators-in-JavaScript/">0</span>
-    
-</span>
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2017-06-22T06:19:28.000Z" itemprop="datePublished">2017-06-22</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2017/06/22/Logical-Operators-in-JavaScript/">Logical Operators in JavaScript</a>
+        Logical Operators in JavaScript
         </h1>
     
 
-        <p class="article-excerpt">
-            There are three logical operators in JavaScript,  &amp;&amp;, || and !. 
-DescriptionUnlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to true, t
-        </p>
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/06/22/Logical-Operators-in-JavaScript/" class="article-date">
+            <time datetime="2017-06-22T06:19:28.000Z" itemprop="datePublished">2017-06-22</time>
+        </a>
     </div>
-</article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/06/21/FirstTry/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/img/170621fooddelivery.jpeg)" alt="My own delivery website :)" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2017/06/21/FirstTry/">0</span>
-    
-</span>
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Logical-Operators-JavaScript/">Logical Operators;JavaScript</a>
+    </div>
 
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
             </div>
-            <div class="date"><time datetime="2017-06-21T08:05:12.000Z" itemprop="datePublished">2017-06-21</time></div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>There are three logical operators in JavaScript,  <code>&amp;&amp;</code>, <code>||</code> and <code>!</code>. </p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><p>Unlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to <code>true</code>, the value is so-called truthy. If a value can be converted to <code>false</code>, the value is so-called falsy. As logical expressions are evaluated left to right, they are tested using <strong>short-circuit</strong> evaluation:</p>
+<table>
+<thead>
+<tr>
+<th>Expression</th>
+<th>Returns</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>falsy &amp;&amp; expr</code></td>
+<td><code>false</code></td>
+</tr>
+<tr>
+<td><code>truthy &amp;&amp; expr</code></td>
+<td><code>expr</code></td>
+</tr>
+<tr>
+<td>`falsy</td>
+<td></td>
+<td>expr`</td>
+<td><code>expr</code></td>
+</tr>
+<tr>
+<td>`truthy</td>
+<td></td>
+<td>expr`</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td><code>!expr</code></td>
+<td><code>false</code> if <code>expr</code> can be converted to <code>true</code>; otherwise,  <code>true</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Expressions that can be converted to <code>false</code> are:</p>
+<ul>
+<li><code>NaN</code>;</li>
+<li><code>null</code>;</li>
+<li><code>0</code>;</li>
+<li><code>undefined</code>;</li>
+<li>empty string(<code>&quot;&quot;</code>);</li>
+</ul>
+<h3 id="Replace-if-statement-with-logical-OR"><a href="#Replace-if-statement-with-logical-OR" class="headerlink" title="Replace if statement with logical OR"></a>Replace if statement with logical OR</h3><p>Taking advantage of the short-circuit feature, we can easily replace <code>if</code> statement with <code>||</code> and make the code shorter. The pattern is as follow:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//function 1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">shortCircuitEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  doSomething() || doSomethingElse();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">equivalentEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> flag = doSomething();</div><div class="line">  <span class="keyword">if</span> (!flag) &#123;</div><div class="line">    doSomethingElse();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//function 2 :equivalent with function 1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">shortCircuitEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  doSomething() || doSomethingElse();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Example"><a href="#Example" class="headerlink" title="Example"></a>Example</h3><h5 id="Determine-the-browser-compatibility"><a href="#Determine-the-browser-compatibility" class="headerlink" title="Determine the browser compatibility"></a>Determine the browser compatibility</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">domObj.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">	<span class="keyword">if</span>(e)&#123;  			<span class="comment">//if in firefox, use e</span></div><div class="line">		e.……</div><div class="line"> 	&#125;<span class="keyword">else</span>&#123;				<span class="comment">//if in IE, use event</span></div><div class="line"> 		event.……</div><div class="line"> 	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>While, for shorter:</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">domObj.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> domObjEvent = e || event;</div><div class="line">  domObjEvent.……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Explaination:</p>
+<p> If you are using IE, ‘e’ cannot be used as an event object. <code>e</code> equals<code>false</code> while <code>event</code>equals <code>true</code>, so <code>event</code> is passed to<code>domObjEvent</code>.</p>
+<p> If you are using firefox, ‘event’ cannot be used as an event object. <code>e</code> equals<code>true</code> while <code>event</code>equals <code>false</code>, so <code>e</code> is passed to<code>domObjEvent</code>.</p>
+<h3 id="Practice"><a href="#Practice" class="headerlink" title="Practice"></a>Practice</h3><p>Q: </p>
+
         </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/06/21/FirstTry/">My own delivery website :)</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            I built a delivery website!
-Check this out!
-
-
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2017/06/21/hello-world/" class="thumbnail">
-    
-    
-        <span class="thumbnail-image thumbnail-none"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2017/06/21/hello-world/">0</span>
-    
-</span>
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
+        <footer class="article-footer">
             
-            </div>
-            <div class="date"><time datetime="2017-06-21T08:02:38.000Z" itemprop="datePublished">2017-06-21</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2017/06/21/hello-world/">Hello World</a>
-        </h1>
-    
 
-        <p class="article-excerpt">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick
-        </p>
+
+
+    <a data-url="http://yoursite.com/2017/06/22/Logical-Operators-in-JavaScript/" data-id="cj483v6gw0000u2fyieeqbk32" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
     </div>
 </article>
+
+    <section id="comments">
     
-        </div>
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
     
-
-
-    </div></section>
-
+    </section>
 
 
                         </div>
@@ -352,6 +363,19 @@ Quick
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/06/21/FirstTry/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">older</strong>
+        <p class="article-nav-title">My own delivery website :)</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -502,11 +526,13 @@ Quick
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://yoursite.com/2017/06/22/Logical-Operators-in-JavaScript/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
