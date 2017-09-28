@@ -31,7 +31,7 @@
 
         addTile() {
             let t = new Tile();
-            new Tile.apply(t, arguments); //?????????
+            Tile.apply(t, arguments);
             this.tiles.push(t);
             return t;
         }
@@ -193,7 +193,7 @@
         }
     }
 </script>
-    <script type="text/babel">
+<script type="text/babel">
         class TileView extends React.Component {
 	        render(){
 		        let classArray = ['tile'];
