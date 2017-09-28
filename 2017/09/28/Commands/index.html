@@ -3,22 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Logical Operators in JavaScript | Hexo</title>
+    <title>HDFS Shell Commands | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="JavaScript" />
+        <meta name="keywords" content="hadoop hdfs shell" />
     
-    <meta name="description" content="This artical tells the basic use and smart practice of three logical operators in JavaScript.">
-<meta name="keywords" content="JavaScript">
+    <meta name="description" content="An introduction to basic use of HDFS shell commands.">
+<meta name="keywords" content="hadoop hdfs shell">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Logical Operators in JavaScript">
-<meta property="og:url" content="https://beihainorth.github.io/2017/06/22/Logical-Operators-in-JavaScript/index.html">
+<meta property="og:title" content="HDFS Shell Commands">
+<meta property="og:url" content="https://beihainorth.github.io/2017/09/28/Commands/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="This artical tells the basic use and smart practice of three logical operators in JavaScript.">
-<meta property="og:updated_time" content="2017-06-23T01:28:49.000Z">
+<meta property="og:description" content="An introduction to basic use of HDFS shell commands.">
+<meta property="og:image" content="https://beihainorth.github.io/img/hdfs_shell_command_screenshots/Screen">
+<meta property="og:updated_time" content="2017-09-28T17:02:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Logical Operators in JavaScript">
-<meta name="twitter:description" content="This artical tells the basic use and smart practice of three logical operators in JavaScript.">
+<meta name="twitter:title" content="HDFS Shell Commands">
+<meta name="twitter:description" content="An introduction to basic use of HDFS shell commands.">
+<meta name="twitter:image" content="https://beihainorth.github.io/img/hdfs_shell_command_screenshots/Screen">
     
 
     
@@ -138,14 +140,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-Logical-Operators-in-JavaScript" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="hdfs-Commands" class="article article-single article-type-hdfs" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        Logical Operators in JavaScript
+        HDFS Shell Commands
         </h1>
     
 
@@ -155,78 +157,119 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/06/22/Logical-Operators-in-JavaScript/" class="article-date">
-            <time datetime="2017-06-22T18:19:28.000Z" itemprop="datePublished">2017-06-22</time>
+        <a href="/2017/09/28/Commands/" class="article-date">
+            <time datetime="2017-09-28T16:45:55.000Z" itemprop="datePublished">2017-09-28</time>
         </a>
     </div>
 
                 
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/JavaScript/">JavaScript</a>
+        <a class="tag-link" href="/tags/hadoop-hdfs-shell/">hadoop hdfs shell</a>
     </div>
 
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>This artical tells the basic use and smart practice of three logical operators in JavaScript.</p>
+            <p>An introduction to basic use of HDFS shell commands. </p>
 <a id="more"></a>
-<h2 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h2><p>Unlike in Java or C++, logical operators here can be used with non-bool type. If a value can be converted to <code>true</code>, the value is so-called truthy. If a value can be converted to <code>false</code>, the value is so-called falsy. As logical expressions are evaluated left to right, they are tested using <strong>short-circuit</strong> evaluation:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Expression</th>
-<th style="text-align:left">Returns</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"><code>falsy</code> &#38;&#38; <code>expr</code></td>
-<td style="text-align:left"><code>false</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>truthy</code> &#38;&#38; <code>expr</code></td>
-<td style="text-align:left"><code>expr</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>falsy</code> &#124;&#124; <code>expr</code></td>
-<td style="text-align:left"><code>expr</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>truthy</code> &#124;&#124; <code>expr</code></td>
-<td style="text-align:left"><code>true</code></td>
-</tr>
-<tr>
-<td style="text-align:center"><code>!expr</code></td>
-<td style="text-align:left"><code>false</code> if <code>expr</code> can be converted to <code>true</code>; otherwise,  <code>true</code>.</td>
-</tr>
-</tbody>
-</table>
-<p>Expressions that can be converted to <code>false</code> are:</p>
-<ul>
-<li><code>NaN</code>;</li>
-<li><code>null</code>;</li>
-<li><code>0</code>;</li>
-<li><code>undefined</code>;</li>
-<li>empty string(<code>&quot;&quot;</code>);</li>
-</ul>
-<h2 id="Replace-if-statement-with-logical-OR"><a href="#Replace-if-statement-with-logical-OR" class="headerlink" title="Replace if statement with logical OR"></a>Replace if statement with logical OR</h2><p>Taking advantage of the short-circuit feature, we can easily replace <code>if</code> statement with <code>||</code> and make the code shorter. The pattern is as follow:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//function 1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">shortCircuitEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  doSomething() || doSomethingElse();</div><div class="line">&#125;</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">equivalentEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> flag = doSomething();</div><div class="line">  <span class="keyword">if</span> (!flag) &#123;</div><div class="line">    doSomethingElse();</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="comment">//function 2 :equivalent with function 1</span></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">shortCircuitEvaluation</span>(<span class="params"></span>) </span>&#123;</div><div class="line">  doSomething() || doSomethingElse();</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<h5 id="Example-1-Replace-if"><a href="#Example-1-Replace-if" class="headerlink" title="Example 1 : Replace if"></a>Example 1 : Replace if</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span>(a &gt; <span class="number">10</span>)&#123;</div><div class="line">  alert(<span class="string">'Hello'</span>);  </div><div class="line">&#125;</div><div class="line"><span class="comment">//the code above equals to:</span></div><div class="line">a&gt;<span class="number">10</span>&amp;&amp;alert(<span class="string">'Hello'</span>);</div></pre></td></tr></table></figure>
-<h5 id="Example-2-Replace-if-else"><a href="#Example-2-Replace-if-else" class="headerlink" title="Example 2 : Replace if/else"></a>Example 2 : Replace if/else</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> b = <span class="number">0</span>;</div><div class="line"><span class="keyword">if</span>(a = <span class="number">1</span>)&#123;</div><div class="line">  b = <span class="number">10</span>;</div><div class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(a = <span class="number">2</span>)&#123;</div><div class="line">  b = <span class="number">13</span>;</div><div class="line">&#125;<span class="keyword">else</span> <span class="keyword">if</span>(a = <span class="number">3</span>)&#123;</div><div class="line">  b = <span class="number">20</span>;</div><div class="line">&#125;<span class="keyword">else</span>&#123;</div><div class="line">  b = <span class="number">0</span>;</div><div class="line">&#125;</div><div class="line"><span class="comment">//the code above equals to:</span></div><div class="line"><span class="keyword">var</span> b = (a===<span class="number">1</span>&amp;&amp;<span class="number">10</span>)||(a===<span class="number">2</span>&amp;&amp;<span class="number">13</span>)||(a===<span class="number">3</span>&amp;&amp;<span class="number">20</span>)||<span class="number">0</span>;</div><div class="line"><span class="comment">//even better:</span></div><div class="line"><span class="keyword">var</span> b = &#123;<span class="string">'1'</span>:<span class="number">10</span>, <span class="string">'2'</span>:<span class="number">13</span>, <span class="string">'3'</span>:<span class="number">20</span>&#125;[a]||<span class="number">0</span>;</div></pre></td></tr></table></figure>
-<p>As you can see the pattern here is : </p>
-<p>replace <code>if( condition ){ code }</code> with <code>condition &amp;&amp; code</code>;</p>
-<p>Replace<code>if(condition) {code1} else {code2}</code>with<code>code1 || code2</code>.</p>
-<h5 id="Example-3"><a href="#Example-3" class="headerlink" title="Example 3 :"></a>Example 3 :</h5><p>Determine the browser compatibility</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">domObj.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">if</span>(e)&#123;  			<span class="comment">//if in firefox, use e</span></div><div class="line">    e.……</div><div class="line">  &#125;<span class="keyword">else</span>&#123;				<span class="comment">//if in IE, use event</span></div><div class="line"> 	event.……</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>While, for shorter:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">domObj.onkeydown = <span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;</div><div class="line">  <span class="keyword">var</span> domObjEvent = e || event;</div><div class="line">  domObjEvent.……</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Explaination:</p>
-<p> If you are using IE, <code>e</code> cannot be used as an event object. <code>e</code> equals<code>false</code> while <code>event</code>equals <code>true</code>, so <code>event</code> is passed to<code>domObjEvent</code>.</p>
-<p> If you are using firefox, <code>event</code> cannot be used as an event object. <code>e</code> equals<code>true</code> while <code>event</code>equals <code>false</code>, so <code>e</code> is passed to<code>domObjEvent</code>.</p>
-<h2 id="Other-Smart-Practice"><a href="#Other-Smart-Practice" class="headerlink" title="Other Smart Practice"></a>Other Smart Practice</h2><h5 id="1-Get-the-very-first-‘truthy’-value"><a href="#1-Get-the-very-first-‘truthy’-value" class="headerlink" title="1. Get the very first ‘truthy’ value"></a>1. Get the very first ‘truthy’ value</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a1 = <span class="literal">null</span>;</div><div class="line"><span class="keyword">var</span> a2 = <span class="number">24</span>;</div><div class="line"><span class="keyword">var</span> b = a1||a2||<span class="number">100</span>;</div><div class="line"><span class="built_in">console</span>.log(b); <span class="comment">//24</span></div></pre></td></tr></table></figure>
-<h5 id="2-Pass-default-value-to-function-parameter"><a href="#2-Pass-default-value-to-function-parameter" class="headerlink" title="2. Pass default value to function parameter"></a>2. Pass default value to function parameter</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params">p</span>)</span>&#123;</div><div class="line">  p = p||<span class="number">10</span>; <span class="comment">//if p is not passed, make it 10</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>All of the hadoop shell commands come with <code>hadoop fs</code> as a start. </p>
+<h4 id="1-mkdir-amp-rmdir"><a href="#1-mkdir-amp-rmdir" class="headerlink" title="1. mkdir &amp; rmdir"></a>1. mkdir &amp; rmdir</h4><p><code>hadoop fs -mkdir [-p] &lt;paths&gt;</code> </p>
+<p>It takes paths(urls) as arguments and create certain directory. <code>-p</code> indicating creating parents directories along the paths. </p>
+<p><code>hadoop fs -rmdir [--ignore-fail-on-non-empty] URI [URI ...]</code> </p>
+<p>It deletes a directory. <code>--ignore-fail-on-non-empty</code>: When using wildcards, do not fail if a directory still contains files.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 10.37.56.png" alt="mkdir &amp; rmdir"></p>
+<h4 id="2-put"><a href="#2-put" class="headerlink" title="2. put"></a>2. put</h4><p><code>hadoop fs -put [-f][-p] [-l][-d] [ - | &lt;localsrc1&gt; .. ]. &lt;dst&gt;</code> </p>
+<p>Copy files/folders and put them into destination hdfs directory. Also reads input from stdin and writes to destination file system if the source is set to “-”.</p>
+<h4 id=""><a href="#" class="headerlink" title=""></a><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 10.52.11.png" alt="put"></h4><h4 id="3-copyFromLocal"><a href="#3-copyFromLocal" class="headerlink" title="3. copyFromLocal"></a>3. copyFromLocal</h4><p><code>hadoop fs -copyFromLocal &lt;localsrc&gt; URI</code></p>
+<p>Similar to the <code>fs -put</code> command, except that the source is restricted to a local file reference.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 14.40.14.png" alt="copyFromLocal"></p>
+<h4 id="4-ls"><a href="#4-ls" class="headerlink" title="4. ls"></a>4. ls</h4><p><code>hadoop fs -ls [-d] [-h] [-R] &lt;args&gt;</code></p>
+<p>-d: Directories are listed as plain files.</p>
+<p>-h: Format file sizes in a human-readable fashion (eg 64.0m instead of 67108864).</p>
+<p>-R: Recursively list subdirectories encountered.</p>
+<h4 id="5-get"><a href="#5-get" class="headerlink" title="5. get"></a>5. get</h4><p><code>hadoop fs -get [-ignorecrc] [-crc] [-p] [-f] &lt;src&gt; &lt;localdst&gt;</code></p>
+<p>Copy files to the local file system.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 14.46.09.png" alt="get9"></p>
+<h4 id="6-du"><a href="#6-du" class="headerlink" title="6. du"></a>6. du</h4><p><code>hadoop fs -du [-s] [-h] URI [URI ...]</code></p>
+<p>Displays sizes of files and directories contained in the given directory or the length of a file in case its just a file. The <code>-s</code> option will result in an aggregate summary of file lengths being displayed, rather than the individual files. The <code>-h</code> option will format file sizes in a “human-readable” fashion (e.g 64.0m instead of 67108864)</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 14.49.46.png" alt="du"></p>
+<h4 id="7-count"><a href="#7-count" class="headerlink" title="7. count"></a>7. count</h4><p><code>hadoop fs -count [-q] [-h] [-v] &lt;paths&gt;</code></p>
+<p>Count the number of directories, files and bytes under the paths that match the specified file pattern. The <code>-h</code> option shows sizes in human readable format. <img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 14.51.29.png" alt="count">The <code>-v</code> option displays a header line.</p>
+<h4 id="8-mv"><a href="#8-mv" class="headerlink" title="8. mv"></a>8. mv</h4><p><code>hadoop fs -mv URI [URI ...] &lt;dest&gt;</code></p>
+<p>Move a file / multiple files from one place to another. </p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 14.56.51.png" alt="mv"></p>
+<h4 id="9-cp"><a href="#9-cp" class="headerlink" title="9. cp"></a>9. cp</h4><p><code>hadoop fs -cp [-f] [-p | -p[topax]] URI [URI ...] &lt;dest&gt;</code></p>
+<p>Copy files from source to destination.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.02.14.png" alt="cp"></p>
+<h4 id="10-moveFromLocal"><a href="#10-moveFromLocal" class="headerlink" title="10. moveFromLocal"></a>10. moveFromLocal</h4><p><code>hadoop fs -moveFromLocal &lt;localsrc&gt; &lt;dst&gt;</code></p>
+<p>Similar to put command, except that the source localsrc is deleted after it’s copied.<img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.06.11.png" alt="moveFromLocal"></p>
+<h4 id="11-moveToLocal"><a href="#11-moveToLocal" class="headerlink" title="11. moveToLocal"></a>11. moveToLocal</h4><p><code>hadoop fs -moveToLocal [-crc] &lt;src&gt; &lt;dst&gt;</code></p>
+<p>Displays a “Not implemented yet” message.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.08.38.png" alt="moveToLocal"></p>
+<h4 id="12-getmerge"><a href="#12-getmerge" class="headerlink" title="12. getmerge"></a>12. getmerge</h4><p><code>hadoop fs -getmerge [-nl] &lt;src&gt; &lt;localdst&gt;</code></p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.17.33.png" alt="getmerge"></p>
+<h4 id="13-appendToFile"><a href="#13-appendToFile" class="headerlink" title="13. appendToFile"></a>13. appendToFile</h4><p><code>hadoop fs -appendToFile &lt;localsrc&gt; ... &lt;dst&gt;</code></p>
+<h4 id="14-cat"><a href="#14-cat" class="headerlink" title="14. cat"></a>14. cat</h4><p><code>hadoop fs -cat [-ignoreCrc] URI [URI ...]</code></p>
+<p>Copies source paths to stdout.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.21.05.png" alt="cat"></p>
+<h4 id="15-text"><a href="#15-text" class="headerlink" title="15. text"></a>15. text</h4><p><code>hadoop fs -text &lt;src&gt;</code></p>
+<p>Takes a source file and outputs the file in text format. </p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.24.00.png" alt="text"></p>
+<h4 id="16-touchz"><a href="#16-touchz" class="headerlink" title="16. touchz"></a>16. touchz</h4><p><code>hadoop fs -touchz URI [URI ...]</code></p>
+<p>Create a file of zero length. An error is returned if the file exists with non-zero length.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.26.59.png" alt="touchz"></p>
+<h4 id="17-stat"><a href="#17-stat" class="headerlink" title="17. stat"></a>17. stat</h4><p><code>hadoop fs -stat [format] &lt;path&gt; ...</code></p>
+<p>Print statistics about the file/directory at <path></path> in the specified format.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.29.02.png" alt="stat"></p>
+<h4 id="18-tail"><a href="#18-tail" class="headerlink" title="18. tail"></a>18. tail</h4><p><code>hadoop fs -tail [-f] URI</code></p>
+<p>Displays last kilobyte of the file to stdout. Mostly used to check the log file.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.30.55.png" alt="tail"></p>
+<h4 id="19-chgrp-amp-chmod-amp-chown"><a href="#19-chgrp-amp-chmod-amp-chown" class="headerlink" title="19. chgrp &amp; chmod &amp; chown"></a>19. chgrp &amp; chmod &amp; chown</h4><p><code>hadoop fs -chgrp [-R] GROUP URI [URI ...]</code></p>
+<p><code>hadoop fs -chmod [-R] &lt;MODE[,MODE]... | OCTALMODE&gt; URI [URI …]</code></p>
+<p><code>hadoop fs -chown [-R] [OWNER][:[GROUP]] URI [URI ]</code></p>
+<p>The <code>-R</code> option will make the change recursively through the directory structure.</p>
+<h4 id="20-rm"><a href="#20-rm" class="headerlink" title="20. rm"></a>20. rm</h4><p><code>hadoop fs -rm [-f] [-r |-R] [-skipTrash] URI [URI ...]</code></p>
+<p>Delete files specified as args. If trash is enabled, file system instead moves the deleted file to a trash directory.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.37.22.png" alt="rm"></p>
+<h4 id="21-rmr"><a href="#21-rmr" class="headerlink" title="21. rmr"></a>21. rmr</h4><p><code>hadoop fs -rmr [-skipTrash] URI [URI ...]</code></p>
+<p>Recursive version of delete.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.39.38.png" alt="rmr"></p>
+<p>As shown in the command line, this shell command is deprecated. From now on <code>-rm -r</code>should be used to delete file recursively.</p>
+<h4 id="22-checksum"><a href="#22-checksum" class="headerlink" title="22. checksum"></a>22. checksum</h4><p><code>hadoop fs -checksum URI</code></p>
+<p>Returns the checksum information of a file.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.42.56.png" alt="checksum"></p>
+<h4 id="23-df"><a href="#23-df" class="headerlink" title="23. df"></a>23. df</h4><p><code>hadoop fs -df [-h] URI [URI ...]</code></p>
+<p>Displays free space. The -h option will format file sizes in a “human-readable” fashion.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.45.34.png" alt="df"></p>
+<h4 id="24-expunge"><a href="#24-expunge" class="headerlink" title="24. expunge"></a>24. expunge</h4><p><code>hadoop fs -expunge</code></p>
+<p>Permanently delete files in checkpoints older than the retention threshold from trash directory, and create new checkpoint.</p>
+<h4 id="25-find"><a href="#25-find" class="headerlink" title="25. find"></a>25. find</h4><p><code>hadoop fs -find &lt;path&gt; ... &lt;expression&gt; ...</code></p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.49.39.png" alt="find"></p>
+<h4 id="26-getfacl"><a href="#26-getfacl" class="headerlink" title="26. getfacl"></a>26. getfacl</h4><p><code>hadoop fs -getfacl [-R] &lt;path&gt;</code></p>
+<p>Displays the Access Control Lists (ACLs) of files and directories. If a directory has a default ACL, then getfacl also displays the default ACL.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.53.30.png" alt="getfacl"></p>
+<h4 id="27-getfattr"><a href="#27-getfattr" class="headerlink" title="27.getfattr"></a>27.getfattr</h4><p><code>hadoop fs -getfattr [-R] -n name | -d [-e en] &lt;path&gt;</code></p>
+<p>Displays the extended attribute names and values (if any) for a file or directory.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.55.07.png" alt="getfattr"></p>
+<h4 id="28-help"><a href="#28-help" class="headerlink" title="28. help"></a>28. help</h4><p><code>hadoop fs -help</code></p>
+<p>Return usage output.<img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 15.56.15.png" alt="help"></p>
+<h4 id="28-setfattr"><a href="#28-setfattr" class="headerlink" title="28. setfattr"></a>28. setfattr</h4><p><code>hadoop fs -setfattr -n name [-v value] | -x name &lt;path&gt;</code></p>
+<p>Sets an extended attribute name and value for a file or directory.</p>
+<h4 id="29-setrep"><a href="#29-setrep" class="headerlink" title="29. setrep"></a>29. setrep</h4><p><code>hadoop fs -setrep [-R] [-w] &lt;numReplicas&gt; &lt;path&gt;</code></p>
+<p>Changes the replication factor of a file.</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 16.01.21.png" alt="setrep"></p>
+<h4 id="30-test"><a href="#30-test" class="headerlink" title="30. test"></a>30. test</h4><p><code>hadoop fs -test -[defsz] URI</code></p>
+<p>-d: f the path is a directory, return 0.</p>
+<p>-e: if the path exists, return 0.</p>
+<p>-f: if the path is a file, return 0.</p>
+<p>-s: if the path is not empty, return 0.</p>
+<p>-z: if the file is zero length, return 0.</p>
+<p>The /temoFolder2 contains a .txt file of 0byte. The results are as follow:</p>
+<p><img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 16.04.02.png" alt="test"></p>
+<h4 id="31-usage"><a href="#31-usage" class="headerlink" title="31. usage"></a>31. usage</h4><p><code>hadoop fs -usage command</code></p>
+<p>Return the help for an individual command.<img src="/img/hdfs_shell_command_screenshots/Screen Shot 2017-09-25 at 16.06.10.png" alt="usage"></p>
 
         </div>
         <footer class="article-footer">
@@ -234,7 +277,7 @@
 
 
 
-    <a data-url="https://beihainorth.github.io/2017/06/22/Logical-Operators-in-JavaScript/" data-id="cj84pkarn0004x6v5qeuuin8i" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://beihainorth.github.io/2017/09/28/Commands/" data-id="cj84pkarc0001x6v5uph2trtt" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -371,20 +414,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/07/19/2048-Implementation-in-React/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            2048 Implementation in React
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/06/21/FirstTry/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/07/19/2048-Implementation-in-React/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">My own delivery website :)</p>
+        <p class="article-nav-title">2048 Implementation in React</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -560,7 +593,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://beihainorth.github.io/2017/06/22/Logical-Operators-in-JavaScript/';
+    var disqus_url = 'https://beihainorth.github.io/2017/09/28/Commands/';
     
     (function() {
     var dsq = document.createElement('script');
