@@ -3,23 +3,24 @@
 <head>
     <meta charset="utf-8">
     
-    <title>2048 Implementation in React | Hexo</title>
+    <title>How To Install Hadoop on Mac | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-        <meta name="keywords" content="" />
+        <meta name="keywords" content="Hadoop Tutorial" />
     
-    <meta name="description" content="Just a simple implementation of the popular game 2048 using React. I made it for practicing my programming skills.">
+    <meta name="description" content="This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.">
+<meta name="keywords" content="Hadoop Tutorial">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2048 Implementation in React">
-<meta property="og:url" content="https://beihainorth.github.io/2017/07/19/2048-Implementation-in-React/index.html">
+<meta property="og:title" content="How To Install Hadoop on Mac">
+<meta property="og:url" content="https://beihainorth.github.io/2017/10/25/hadoop-0-install/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Just a simple implementation of the popular game 2048 using React. I made it for practicing my programming skills.">
-<meta property="og:image" content="https://raw.githubusercontent.com/BeihaiNorth/2048-React/master/2048demo.gif">
-<meta property="og:updated_time" content="2017-09-28T16:07:39.000Z">
+<meta property="og:description" content="This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.">
+<meta property="og:image" content="https://beihainorth.github.io/Users/leslie/Documents/Code/hexoblog/source/img/hadoop-0-install/50070.png">
+<meta property="og:updated_time" content="2017-10-25T19:11:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="2048 Implementation in React">
-<meta name="twitter:description" content="Just a simple implementation of the popular game 2048 using React. I made it for practicing my programming skills.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/BeihaiNorth/2048-React/master/2048demo.gif">
+<meta name="twitter:title" content="How To Install Hadoop on Mac">
+<meta name="twitter:description" content="This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.">
+<meta name="twitter:image" content="https://beihainorth.github.io/Users/leslie/Documents/Code/hexoblog/source/img/hadoop-0-install/50070.png">
     
 
     
@@ -139,14 +140,14 @@
     </h1>
 </div>
                         <div class="main-body-content">
-                            <article id="post-2048-Implementation-in-React" class="article article-single article-type-post" itemscope itemprop="blogPost">
+                            <article id="post-hadoop-0-install" class="article article-single article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
             <header class="article-header">
                 
     
         <h1 class="article-title" itemprop="name">
-        2048 Implementation in React
+        How To Install Hadoop on Mac
         </h1>
     
 
@@ -156,26 +157,54 @@
             <div class="article-meta">
                 
     <div class="article-date">
-        <a href="/2017/07/19/2048-Implementation-in-React/" class="article-date">
-            <time datetime="2017-07-19T13:37:33.000Z" itemprop="datePublished">2017-07-19</time>
+        <a href="/2017/10/25/hadoop-0-install/" class="article-date">
+            <time datetime="2017-10-25T19:08:50.000Z" itemprop="datePublished">2017-10-25</time>
         </a>
     </div>
 
                 
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Hadoop-Tutorial/">Hadoop Tutorial</a>
+    </div>
+
             </div>
         
         
         <div class="article-entry" itemprop="articleBody">
-            <p>Just a simple implementation of the popular game 2048 using React. I made it for practicing my programming skills. </p>
+            <p>This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.</p>
 <a id="more"></a>
-<h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>You must know the game 2048 first made by Veewo Studio. Well here is a clone of it. </p>
-<p>Play it <a href="#">here</a>!</p>
-<p> <img src="https://raw.githubusercontent.com/BeihaiNorth/2048-React/master/2048demo.gif" alt="2048demo"></p>
-<h2 id="Source-Code"><a href="#Source-Code" class="headerlink" title="Source Code"></a>Source Code</h2><p>This game is boostrapped with <a href="https://github.com/facebookincubator/create-react-app" target="_blank" rel="external">Create React App</a>, which frees you from configurations like Bable or Webpack and make you focus only on code.</p>
-<p>The code is open sourced in <a href="https://github.com/BeihaiNorth" target="_blank" rel="external">my github</a>.</p>
-<p>To get the code and run the game, just:</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">git clone https://github.com/BeihaiNorth/2048-React.git</div><div class="line">npm install</div><div class="line">npm start</div></pre></td></tr></table></figure>
-<p>Then open <a href="http://localhost:3000/" target="_blank" rel="external">http://localhost:3000</a> in brower to view the running app. </p>
+<h1 id="How-To-Install-Hadoop-on-Mac"><a href="#How-To-Install-Hadoop-on-Mac" class="headerlink" title="How To Install Hadoop on Mac"></a>How To Install Hadoop on Mac</h1><p><em>Hadoop 2.8.1</em></p>
+<p><em>macOS Sierra 10.12.6</em></p>
+<h4 id="Step-1-Generate-SSL-key"><a href="#Step-1-Generate-SSL-key" class="headerlink" title="Step 1: Generate SSL key."></a>Step 1: Generate SSL key.</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa</div><div class="line"><span class="meta">$</span> cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</div><div class="line"><span class="meta">$</span> chmod 0600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
+<p>Try this command to test.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> ssh localhost</div><div class="line">Last login: Mon Oct 23 20:46:22 2017</div></pre></td></tr></table></figure>
+<h4 id="Step-2-Install-Hadoop-using-homebrew"><a href="#Step-2-Install-Hadoop-using-homebrew" class="headerlink" title="Step 2: Install Hadoop using homebrew."></a>Step 2: Install Hadoop using homebrew.</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> brew search hadoop</div><div class="line"><span class="meta">$</span> brew install hadoop</div></pre></td></tr></table></figure>
+<p>Hadoop will be installed under <strong>/usr/local/Cellar/hadoop</strong>.</p>
+<h4 id="Step-3-Configuration"><a href="#Step-3-Configuration" class="headerlink" title="Step 3: Configuration"></a>Step 3: Configuration</h4><p>All the below configuration files can be found in <strong>/usr/local/Cellar/hadoop/2.8.1/libexec/etc/hadoop</strong>.</p>
+<p><strong>hadoop-env.sh</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#</span> The java implementation to use.</div><div class="line">export JAVA_HOME="/Library/Java/Home"</div></pre></td></tr></table></figure>
+<p><strong>core-site.xml</strong></p>
+<p>First create a temporary file folder in you file system. You can name it with whatever name you want. Then write the below configuration in the core-site.xml.</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>hadoop.tmp.dir<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="comment">&lt;!-- Replace the value below with the path that you just created. --&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>/usr/local/Cellar/hadoop/hdfs/tmp<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">description</span>&gt;</span>A base for other temporary directories.<span class="tag">&lt;/<span class="name">description</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>fs.default.name<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>hdfs://localhost:9000<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>hdfs-site.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>dfs.replication<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>1<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>mapred-site.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapreduce.framework.name<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>yarn<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>mapred.job.tracker<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>localhost:9010<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
+<p><strong>yarn-site.xml</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.aux-services<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>mapreduce_shuffle<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">property</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">name</span>&gt;</span>yarn.nodemanager.aux-services.mapreduce_shuffle.class<span class="tag">&lt;/<span class="name">name</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">value</span>&gt;</span>org.apache.hadoop.mapred.ShuffleHandler<span class="tag">&lt;/<span class="name">value</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">property</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>To activate the configuration, run:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd /usr/local/Cellar/hadoop/2.8.1/libexec/bin</div><div class="line"><span class="meta">$</span> ./hadoop namenode -format</div></pre></td></tr></table></figure>
+<h4 id="Step-4-Start-Hadoop"><a href="#Step-4-Start-Hadoop" class="headerlink" title="Step 4: Start Hadoop"></a>Step 4: Start Hadoop</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd /usr/local/Cellar/hadoop/2.8.1/libexec/sbin</div><div class="line"><span class="meta">$</span> ./start-dfs.sh</div><div class="line"><span class="meta">$</span> ./start-yarn.sh</div></pre></td></tr></table></figure>
+<p>Then you should be able to open these pages:</p>
+<p>Resource Manager: <a href="http://localhost:50070" target="_blank" rel="external">http://localhost:50070</a></p>
+<p><img src="/Users/leslie/Documents/Code/hexoblog/source/img/hadoop-0-install/50070.png" alt="50070"></p>
+<p>JobTracker: <a href="http://localhost:8088/" target="_blank" rel="external">http://localhost:8088/</a></p>
+<p><img src="/Users/leslie/Documents/Code/hexoblog/source/img/hadoop-0-install/8088.png" alt="8088"></p>
+<p>Node Specific Info: <a href="http://localhost:8042/" target="_blank" rel="external">http://localhost:8042/</a></p>
+<p><img src="/Users/leslie/Documents/Code/hexoblog/source/img/hadoop-0-install/8042.png" alt="8042"></p>
+<p>After you are done, properly shutdown hadoop.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> cd /usr/local/Cellar/hadoop/2.8.1/libexec/sbin</div><div class="line"><span class="meta">$</span> ./stop-dfs.sh</div><div class="line"><span class="meta">$</span> ./stop-yarn.sh</div></pre></td></tr></table></figure>
 
         </div>
         <footer class="article-footer">
@@ -183,7 +212,7 @@
 
 
 
-    <a data-url="https://beihainorth.github.io/2017/07/19/2048-Implementation-in-React/" data-id="cj97f1lto0001qbv5jo8t9yh2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://beihainorth.github.io/2017/10/25/hadoop-0-install/" data-id="cj97f1ltt0003qbv5ja13oxt8" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -320,20 +349,10 @@
         
 <nav id="article-nav">
     
-        <a href="/2017/09/28/Commands/" id="article-nav-newer" class="article-nav-link-wrap">
-        <strong class="article-nav-caption">newer</strong>
-        <p class="article-nav-title">
-        
-            HDFS Shell Commands
-        
-        </p>
-        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
-    </a>
     
-    
-        <a href="/2017/06/22/Logical-Operators-in-JavaScript/" id="article-nav-older" class="article-nav-link-wrap">
+        <a href="/2017/09/28/Commands/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">older</strong>
-        <p class="article-nav-title">Logical Operators in JavaScript</p>
+        <p class="article-nav-title">HDFS Shell Commands</p>
         <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
         </a>
     
@@ -529,7 +548,7 @@
     var disqus_shortname = 'hexo-theme-hueman';
     
     
-    var disqus_url = 'https://beihainorth.github.io/2017/07/19/2048-Implementation-in-React/';
+    var disqus_url = 'https://beihainorth.github.io/2017/10/25/hadoop-0-install/';
     
     (function() {
     var dsq = document.createElement('script');
