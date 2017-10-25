@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.">
 <meta property="og:image" content="https://beihainorth.github.io/img/hadoop-0-install/50070.png">
-<meta property="og:updated_time" content="2017-10-25T19:14:03.000Z">
+<meta property="og:updated_time" content="2017-10-25T19:22:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How To Install Hadoop on Mac">
 <meta name="twitter:description" content="This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.">
@@ -174,8 +174,7 @@
         <div class="article-entry" itemprop="articleBody">
             <p>This artical tells you how to install the lastest Hadoop version on Mac OS using HomeBrew.</p>
 <a id="more"></a>
-<h1 id="How-To-Install-Hadoop-on-Mac"><a href="#How-To-Install-Hadoop-on-Mac" class="headerlink" title="How To Install Hadoop on Mac"></a>How To Install Hadoop on Mac</h1><p><em>Hadoop 2.8.1</em></p>
-<p><em>macOS Sierra 10.12.6</em></p>
+<p><em>Environment: macOS Sierra 10.12.6</em></p>
 <h4 id="Step-1-Generate-SSL-key"><a href="#Step-1-Generate-SSL-key" class="headerlink" title="Step 1: Generate SSL key."></a>Step 1: Generate SSL key.</h4><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa</div><div class="line"><span class="meta">$</span> cat ~/.ssh/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys</div><div class="line"><span class="meta">$</span> chmod 0600 ~/.ssh/authorized_keys</div></pre></td></tr></table></figure>
 <p>Try this command to test.</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">$</span> ssh localhost</div><div class="line">Last login: Mon Oct 23 20:46:22 2017</div></pre></td></tr></table></figure>
@@ -212,7 +211,7 @@
 
 
 
-    <a data-url="https://beihainorth.github.io/2017/10/25/hadoop-0-install/" data-id="cj97f5ign0005tuv5ar08ct9o" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="https://beihainorth.github.io/2017/10/25/hadoop-0-install/" data-id="cj97fgu620005y8v5qdxluclk" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
